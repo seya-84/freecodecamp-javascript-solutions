@@ -25,7 +25,6 @@ var contacts = [
   }
 ];
 
-
 function lookUpProfile(name, prop){
   for(var i=0;i<contacts.length;i++){
     if (contacts[i].firstName==name){
