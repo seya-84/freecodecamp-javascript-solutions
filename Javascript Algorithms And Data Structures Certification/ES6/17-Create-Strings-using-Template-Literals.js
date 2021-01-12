@@ -7,7 +7,7 @@ function makeList(arr) {
   // Only change code below this line
   const failureItems = [];
   for(let i = 0; i < arr.length; i++) {
-    failureItems.push(`<li class="text-warning">${arr[i]}</li>`)
+    failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
   }
   // Only change code above this line
 
