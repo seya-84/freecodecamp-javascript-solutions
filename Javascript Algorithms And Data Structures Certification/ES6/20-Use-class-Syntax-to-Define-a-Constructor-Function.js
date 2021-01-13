@@ -1,7 +1,7 @@
 // Only change code below this line
 class Vegetable {
   constructor(name) {
-      this.name = name;
+    this.name = name;
   }
 }
 // Only change code above this line
