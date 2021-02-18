@@ -1,20 +1,29 @@
-function sumFibs(num) {
-  let n = 0;
-  let nPlusOne = 1;
-  let temp;
-  let sum = 0;
+function convertHTML(str) {
 
-  while (n <= num) {
-    temp = n;
-    n = n + nPlusOne;
-    nPlusOne = temp;
+  let temp = str.split("");
 
-    if (nPlusOne % 2 !== 0) {
-      sum += nPlusOne;
+  for (let i = 0; i < temp.length; i++) {
+    switch (temp[i]) {
+      case "<":
+        temp[i] = "&lt;";
+        break;
+      case "&":
+        temp[i] = "&amp;";
+        break;
+      case ">":
+        temp[i] = "&gt;";
+        break;
+      case '"':
+        temp[i] = "&quot;";
+        break;
+      case "'":
+        temp[i] = "&apos;";
+        break;
     }
   }
 
-  return sum;
+  temp = temp.join("");
+  return temp;
 }
 
-sumFibs(4000000);
+convertHTML("Dolce & Gabbana");
